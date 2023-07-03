@@ -1,0 +1,34 @@
+{
+  "jsc": {
+    "experimental": {
+      "plugins": [
+        ["@swc/plugin-styled-components", {
+          "cssProp": true,
+ 	  "displayName": true,
+	  "fileName": true
+        }]
+      ]
+    },
+    "parser": {
+      "syntax": "typescript",
+      "tsx": true,
+      "dynamicImport": true
+    },
+    "target": "es2022",
+    "loose": false,
+    "minify": {
+      "compress": false,
+      "mangle": false
+    },
+    "transform": {
+      "react": {
+        "runtime": "automatic"
+      }
+    }
+  },
+  "module": {
+    "type": "es6"
+  },
+  "minify": false,
+  "isModule": true
+}
